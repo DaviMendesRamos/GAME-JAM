@@ -37,15 +37,17 @@ image = SubResource("Image_wdug0")
 size = Vector2(132, 136)
 
 [node name="Node2D" type="Node2D" unique_id=2014120945]
-position = Vector2(72, 71)
+position = Vector2(90, 100)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1036277858]
+position = Vector2(173, 314)
 script = ExtResource("1_nausi")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1973305471]
 texture = SubResource("ImageTexture_cddwr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1079663492]
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_wdug0")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1977143314]
@@ -60,12 +62,24 @@ position = Vector2(3.0000153, 0.9999981)
 scale = Vector2(6.0781245, 1)
 texture = SubResource("ImageTexture_wdug0")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D" unique_id=1228780525]
+position = Vector2(363, 475)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/StaticBody2D" unique_id=765213147]
+position = Vector2(2.5, -2)
+shape = SubResource("RectangleShape2D_nausi")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/StaticBody2D" unique_id=1535454862]
+position = Vector2(588.00006, -502.99994)
+scale = Vector2(7.210938, 1.0234375)
+texture = SubResource("ImageTexture_wdug0")
+
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1183018377]
-position = Vector2(599, 310)
+position = Vector2(549, 351)
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2" unique_id=1135917124]
 texture = ExtResource("2_sitsu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1788867152]
-position = Vector2(-21, -5)
+position = Vector2(-20, -5)
 shape = SubResource("RectangleShape2D_sitsu")
